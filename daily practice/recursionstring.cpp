@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int printbasic(int a,int N){
+int printbasic(string a,int N){
    if( N>0){
     cout<<a<<endl;
    
@@ -11,6 +11,6 @@ int printbasic(int a,int N){
 int  main() {
     int N;
     cin>>N;
-    printbasic(22,N);
+    printbasic("chicha",N);
     
 }
