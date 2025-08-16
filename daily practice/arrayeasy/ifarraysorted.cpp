@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool check(vector<int>& nums) {
+        //the optimized way to do it
         int n = nums.size();
         if (n == 1) {
             return true;
