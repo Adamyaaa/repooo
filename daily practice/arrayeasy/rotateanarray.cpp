@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(int argc, char const *argv[])
+int main()
 {
     int n;
     int k;
@@ -24,3 +24,18 @@ int main(int argc, char const *argv[])
     
     
 }
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        
+        int n=nums.size();
+        int nums2[n];
+        //let it happen by tame impala
+        for(int i =0; i<n;i++){
+            nums2[(i+k)%n]=nums[i%n];
+        }
+        for(int i = 0;i<n;i++){
+            nums[i]=nums2[i];
+        }
+    }
+};
